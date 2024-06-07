@@ -1,0 +1,69 @@
+#total {
+    width: 45vh;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    background-color: aqua;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.images {
+    position: absolute;
+    top: 26vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 9vh;
+    height: 9vh;
+}
+
+.numberInput {
+    position: absolute;
+    height: 7vh;
+    width: 39vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* background-color: pink; */
+    background-color: rgb(242, 238, 239);
+    border-radius: 2vh;
+}
+
+#number {
+    top: 61vh;
+}
+
+#code {
+    top: 71vh;
+}
+
+input {
+    position: absolute;
+    height: 2vh;
+    font-size: 2vh;
+    top: 1vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#tel {
+    width: 26vh;
+}
+
+#codes {
+    width: 10vh;
+}
+
+.buttonGetCode {
+    position: relative;
+    height: 7px;
+    width: 10px;
+    background-color: pink;
+    border-radius: 2vh;
+
+}
