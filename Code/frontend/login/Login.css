@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     position: absolute;
-    background-color: aqua;
+    background: linear-gradient(rgb(255,235,236), white);
     left: 0;
     right: 0;
     top: 0;
@@ -42,28 +42,53 @@
 }
 
 input {
+    font-family: Bahnschrift, sans-serif, "Microsoft YaHei UI";
     position: absolute;
-    height: 2vh;
+    height: 3vh;
     font-size: 2vh;
-    top: 1vh;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    outline: medium;
 }
 
 #tel {
-    width: 26vh;
+    width: 28vh;
+    left: 3.5vh;
+    margin: auto;
 }
 
 #codes {
-    width: 10vh;
+    width: 28vh;
+    left: 3.5vh;
+    margin: auto;
 }
 
 .buttonGetCode {
+    font-family: Bahnschrift, sans-serif, "Microsoft YaHei UI";
     position: relative;
-    height: 7px;
-    width: 10px;
+    height: 7vh;
+    width: 19vh;
     background-color: pink;
     border-radius: 2vh;
+    float: right;
+    line-height: 7vh;
+    text-align: center;
+    font-size: 2.1vh;
+}
 
+.buttonForSubmit {
+    font-family: Bahnschrift, sans-serif, "Microsoft YaHei UI";
+    position: absolute;
+    height: 7vh;
+    width: 39vh;
+    background-color: rgb(254, 58, 59);
+    border-radius: 5vh;
+    float: right;
+    line-height: 7vh;
+    text-align: center;
+    font-size: 2.1vh;
+    top: 83vh;
+    left: 3.5vh;
+    color: white;
 }
