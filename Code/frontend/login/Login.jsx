@@ -6,9 +6,6 @@ import axios from 'axios'
 function Inbox() {
     const [enterMobilePhone, setEnterMobilePhone] = useState('')
     const [enterPassword, setEnterPassword] = useState('')
-    let getTime = 15
-    let id = undefined
-    let isCountingDown
     // let checkResult = {
     //     code: 200,
     //     data: true,
@@ -33,11 +30,26 @@ function Inbox() {
         }).then(() => {
             console.log(passwordRight)
             console.log(passwordRight.data.code)
-            if(passwordRight.data.code === 200) {
+            if (passwordRight.data.code === 200) {
                 console.log("right!")
+                window.location.href = 'http://localhost:5173/personal/'
             } else {
                 alert('Wrong phone number or password')
             }
+        }).then(() => {
+            axios({
+                method: "get",
+                url: `http://localhost:3000/login/status?timestamp=${Date.now()}`,
+                params: {
+                    data: {
+                        profile: {
+                            userId: 0,
+                        }
+                    }
+                }
+            }).then((r) => {
+                console.log(r)
+            })
         })
     }
 
