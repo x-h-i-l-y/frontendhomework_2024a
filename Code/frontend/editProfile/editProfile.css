@@ -1,0 +1,107 @@
+/*body, html {*/
+/*font-family: "Microsoft YaHei UI", serif;*/
+/*}*/
+
+#total {
+    width: 45vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*background: rgb(246, 246, 246);*/
+    background: #66ccff;
+    overflow: auto;
+}
+
+#head {
+    height: 5.875vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftArrow {
+    position: absolute;
+    top: 2vh;
+    left: 2.42vh;
+    height: 1.91vh;
+    width: 1.91vh;
+}
+
+#wordsInHead {
+    position: absolute;
+    top: 2vh;
+    font-size: 1.71vh;
+    left: 6.5vh;
+}
+
+.list {
+    position: relative;
+    width: 41.4vh;
+    height: 5.75vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-bottom: rgb(243, 243, 243) 2px solid;
+    background-color: white;
+}
+
+.leftPart {
+    position: relative;
+    float: left;
+    font-size: 1.625vh;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    text-align: left;
+}
+
+.rightPart {
+    position: relative;
+    text-align: right;
+    font-size: 1.625vh;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Middle {
+    position: relative;
+    height: 2vh;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+}
+
+textarea {
+    /*vertical-align: top;*/
+    /*resize: none;*/
+    /*word-wrap: break-word;*/
+    /*height: 5vh;*/
+}
+
+#submitButton {
+    font-family: Bahnschrift, sans-serif, "Microsoft YaHei UI";
+    position: absolute;
+    height: 7vh;
+    width: 39vh;
+    background-color: rgb(254, 58, 59);
+    border-radius: 5vh;
+    float: right;
+    line-height: 7vh;
+    text-align: center;
+    font-size: 2.1vh;
+    top: 83vh;
+    left: 3.5vh;
+    color: white;
+}

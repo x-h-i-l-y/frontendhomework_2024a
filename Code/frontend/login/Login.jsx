@@ -32,14 +32,14 @@ function Inbox() {
             console.log(passwordRight.data.code)
             if (passwordRight.data.code === 200) {
                 console.log("right!")
-                window.location.href = 'http://localhost:5173/personal/'
+                window.location.href = 'http://localhost:5173/Personal/'
             } else {
                 alert('Wrong phone number or password')
             }
         }).then(() => {
             axios({
                 method: "get",
-                url: `http://localhost:3000/login/status?timestamp=${Date.now()}`,
+                url: `http://localhost:3000/login/status`,
                 params: {
                     data: {
                         profile: {
@@ -77,7 +77,7 @@ function Inbox() {
             </div>
             <div
                 className="buttonForSubmit"
-                onClick={clickSubmit}>验证码登录
+                onClick={clickSubmit}>登录
             </div>
         </>
     )
